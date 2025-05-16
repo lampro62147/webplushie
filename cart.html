@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Plushie Store</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="hotline">
+                <i class="fas fa-phone"></i>
+                Hotline: 0866 777 320
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="logo">
+                <h1>Plushie Store</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">About me</a>
+                        <ul class="dropdown-menu">
+                            <li>Tên:Nguyễn Hải Đăng</li>
+                            <li>MSSV:DH52200438</li>
+                            <li>Lớp:D22_TH14</li>
+                            <li>Nhóm 33 Thứ 5 Ca 3</li>
+                        </ul>
+                    </li>
+                    <li><a href="lab.html">Lab thực hành</a></li>
+                    <li class="cart" onclick="window.location.href='cart.html'">
+                        <div class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge" id="cart-count">0</span>
+                        </div>
+                        <span class="cart-text">Giỏ hàng</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cart-container">
+        <div class="breadcrumb">
+            <a href="index.html">Trang chủ</a>
+            <span>/</span>
+            <span>Giỏ hàng</span>
+        </div>
+
+        <div class="cart-content">
+            <div class="cart-items">
+                <div class="cart-header">
+                    <h2>Giỏ hàng:</h2>
+                    <span class="item-count">0 Sản phẩm</span>
+                </div>
+                <div class="cart-items-list">
+                    <!-- Cart items will be dynamically inserted here -->
+                </div>
+            </div>
+
+            <div class="order-summary">
+                <h2>Thông tin đơn hàng</h2>
+                <div class="total-section">
+                    <div class="total-label">Tổng tiền:</div>
+                    <div class="total-amount">0₫</div>
+                </div>
+                <div class="order-notes">
+                    <label>
+                        <input type="checkbox" id="invoice"> Xuất hoá đơn
+                    </label>
+                    <div class="notes-section">
+                        <h3>Ghi chú đơn hàng</h3>
+                        <textarea placeholder="Ghi chú"></textarea>
+                    </div>
+                    <div class="coupon-section">
+                        <input type="text" placeholder="Nhập mã khuyến mãi (nếu có)">
+                    </div>
+                </div>
+                <button class="checkout-button">THANH TOÁN NGAY</button>
+                <a href="index.html" class="continue-shopping">
+                    <i class="fas fa-arrow-left"></i> Tiếp tục mua hàng
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <hr />
+        <div class="footer-copyright">
+            Họ và tên: Nguyễn Hải Đăng | MSSV: DH52200438| Lớp: D22_TH14 |
+            Nhóm 33 Thứ 5 Ca 3
+        </div>
+    </footer>
+</body>
+</html> 
