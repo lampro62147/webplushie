@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 5 Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0 auto;
+
+    }
+    /* Menu Ngang */
+    .horizontal-menu {
+      list-style: none;
+      padding: 0;
+      display: flex;
+    }
+
+    .horizontal-menu li {
+      font-family: "Bungee Spice", cursive;
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+      background-color: aquamarine;
+      /* transition: 0.3s ease-in-out; */
+    }
+    .horizontal-menu li a{
+      text-decoration: none;
+    }
+
+    .horizontal-menu li:hover {
+      background-color: #f39c12;
+      border-radius: 5px;
+    }
+    .horizontal-menu li a:hover {
+      font-weight: bold;
+      color: white;
+    }
+    @media screen and (max-width:600px) {
+      .horizontal-menu{
+        flex-direction: column;
+      }
+   }
+
+  </style>
+</head>
+<body>
+
+  <!-- Menu Ngang -->
+  <ul class="horizontal-menu">
+    <li><a href="#">Trang chủ</a></li>
+    <li><a href="#">Giới thiệu</a></li>
+    <li><a href="#">Sản phẩm</a></li>
+    <li><a href="#">Dịch vụ</a></li>
+    <li><a href="#">Liên hệ</a></li>
+  </ul>
+
+</body>
+</html>
